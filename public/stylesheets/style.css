@@ -1,0 +1,95 @@
+/**** Default styles ****/
+body {
+  font  : 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width : 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+html{
+	height: 100%;
+	width : 100%;
+}
+
+/**** Navbar ****/
+
+.navbar-inverse{
+	background-image: -webkit-linear-gradient(top,#3b5998 0,#293e6a 100%);
+	background-image: -o-linear-gradient(top,#3b5998 0,#293e6a 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#3b5998),to(#293e6a));
+	background-image: linear-gradient(to bottom,#3b5998 0,#293e6a 100%);
+	border-color    : #293e6a;
+	height          : 60px;
+}
+.navbar-inverse .navbar-brand{
+	color      : white;
+	font-family: 'Titillium Web', sans-serif;
+	font-size  : 2em;
+}
+.navbar-inverse .navbar-brand>strong{
+	font-weight: 900;
+}
+.navbar-brand>span{
+	top		: -15px;
+	position: relative;
+}
+.form-group>input.form-control{
+	width: 250px;
+}
+.navbar{
+	border-radius: 0;
+}
+
+/**** Tweet Box ****/
+
+#tweet-box{
+	float	  : right;
+	width	  : 500px;
+	position  : relative;
+	z-index	  : 1;
+	top	 	  : 50px;
+	background: white;
+	right     : 25px;
+	height    : 75%;
+	border    : 3px solid #293e6a;
+
+}
+#tweet-list{
+	overflow: hidden;
+	padding : 10px;
+}
+#tweet-box>div>h1{
+	text-align: center;
+}
+li{
+	list-style	 : none;
+	border-bottom: 1px solid #eeeeee;
+	padding		 : 15px;
+}
+.navbar{
+	margin-bottom: 0;
+}
+#tweet-box h3{
+	font-size  : 1.1em;
+	font-weight: 900;
+}
+#tweet-box img{
+	float		 : left;
+	border-radius: 50%;
+	border       : 1px solid #eeeeee;
+	margin-right : 10px;
+	position     : relative;
+	top          : 10px; 
+}
+
+
+/**** Map Canvas ****/
+
+#map-canvas{
+	height  : 92%;
+	width   : 100%;
+	position: absolute;
+}
+

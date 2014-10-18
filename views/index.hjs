@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="/stylesheets/nano.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='/stylesheets/font-awesome.css' />
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+
+  	<!-- NAVBAR -->
+	<div class="navbar navbar-inverse navbar-top" role="navigation">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><span class="fa fa-globe fa-2x"></span></a>
+	      <a class="navbar-brand" href="#"><strong>Tweet</strong> Mapper</a>
+	    </div>
+	    <div class="navbar-collapse collapse">
+
+	      <form id="filter" class="navbar-form navbar-right" role="filter">
+	        <div class="form-group">
+	          <input type="text" class="form-control" name="keyword" placeholder="Enter a keyword or hashtag...">
+	        </div>
+	        <button type="submit" class="btn btn-success">Filter Results!</button>
+	      </form>
+
+	      <form id="location" class="navbar-form navbar-right" role="location">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Enter a location...">
+	        </div>
+	        <button type="submit" class="btn btn-success">Find Location!</button>
+	      </form>
+
+	    </div>
+	  </div>
+	</div>
+
+	<!-- TWEET CONTAINER -->
+    <div id="tweet-box" class="nano">
+		<div class="nano-content">
+			<ul id="tweet-list"></ul>
+		</div>
+	</div>
+
+	<!-- MAP CANVAS -->
+	<div id="map-canvas"></div>
+
+	<!-- SCRIPTS -->
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="/javascripts/mapper.js"></script>
+	<script type="text/javascript" src="/javascripts/map-options.js"></script>
+	<script type="text/javascript" src="/javascripts/script.js"></script>
+	<script src="/javascripts/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/javascripts/nanojs.js"></script>
+	<script type="text/javascript">
+		$(".nano").nanoScroller();
+		
+	</script>
+	
+  </body>
+
+</html>
