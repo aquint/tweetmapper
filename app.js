@@ -51,10 +51,10 @@ app.use(function(err, req, res, next) {
 });
  
 var T = new Twit({
-    consumer_key        : env.consumer_key,
-    consumer_secret     : env.consumer_secret,
-    access_token        : env.access_token,
-    access_token_secret : env.access_token_secret
+    consumer_key        : '19vYU1IYOWoet4KTOphgT4EON',
+    consumer_secret     : '7AWDIAqgUPaoACTxkjlCDeTEAX6SN5VJ5xnVPWs5bHtv5PEgvF',
+    access_token        : '2814344271-yOoNkMjK1MCkSTyNqJfVKfCQ6RfTycXZKV4IG9C',
+    access_token_secret : 'bLxv5xiR72dxrnn0Mbcv2FKQVHzZETpp2Ti2fFywQyJGg'
 })
 app.get('/', function(req, res){
     res.sendFile('index.html', {"root": __dirname});
