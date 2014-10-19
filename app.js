@@ -51,10 +51,10 @@ app.use(function(err, req, res, next) {
 });
  
 var T = new Twit({
-    consumer_key        : ENV['consumer_key'],
-    consumer_secret     : ENV['consumer_secret'],
-    access_token        : ENV['access_token'],
-    access_token_secret : ENV['access_token_secret']
+    consumer_key        : env.consumer_key,
+    consumer_secret     : env.consumer_secret,
+    access_token        : env.access_token,
+    access_token_secret : env.access_token_secret
 })
 app.get('/', function(req, res){
     res.sendFile('index.html', {"root": __dirname});
