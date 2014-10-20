@@ -60,7 +60,7 @@ app.get('/', function(req, res){
     res.sendFile('index.hjs', {"root": __dirname});
 });
 
-http.listen(process.env.PORT || 3000, function(){
+http.listen(process.env.PORT, function(){
   console.log("Listening for tweets from Toronto...");
 });
 
