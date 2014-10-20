@@ -57,7 +57,7 @@ var T = new Twit({
     access_token_secret : process.env.access_token_secret
 })
 app.get('/', function(req, res){
-    res.sendFile('index.html', {"root": __dirname});
+    res.sendFile('index.hjs', {"root": __dirname});
 });
 
 http.listen(3000, function(){
